@@ -1,0 +1,55 @@
+body {
+  text-align: center;
+  background-color: #dde79b;
+}
+
+h1 {
+  color: #336699;
+}
+
+h3#box-heading {
+  color: #FF9900;
+}
+
+label {
+  color: #336699;
+}
+
+input[type="email"],
+textarea {
+  background-color: #F0F0F0;
+  color: #333333;
+}
+
+button[type="submit"] {
+  background-color: #FF9900;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tables h2 span {
+  color: #CC0000;
+}
+
+.tables {
+  display: flex;
+  justify-content: space-around;
+}
+
+.valTab,
+.invalTab {
+  width: 45%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #cccccc;
+}

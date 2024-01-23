@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASS MAIL DISPATCHER</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>EXPOSYS DATA LAB</h1>
+    <br>
+    <h1>MASS MAIL DISPATCHER</h1>
+    <label for="upload">CSV File:</label>
+    <input type="file" id="upload" accept="text/csv" name="csvFile">
+    
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h3 id="box-heading">WRITE YOUR MAIL HERE</h3>
+
+        <label for="senderEmail">FROM:</label>
+        <input type="email" id="from" name="senderEmail" required><br><br>
+        
+        <label for="subject">SUBJECT:</label>
+        <textarea type="text" id="subject" name="subject" required></textarea><br><br>
+        
+        <label for="message">MESSAGE:</label>
+        <textarea id="msg" name="message" required></textarea><br><br>
+        
+        <button type="submit" id="Submit"> SEND MAIL </button>
+      </form>
+      <br>
+      
+      <div class="tables">
+        <div class="valTab">
+            <table id="val">
+                <tr>
+                    <td>
+                        <h2>Valid Emails: <span id="valCount"></span></h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="invalTab">
+            <table id="inval">
+                <tr>
+                    <td>
+                        <h2>Invalid Emails: <span id="invalCount"></span></h2>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+      
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="index.js"></script>
+</body>
+</html>
